@@ -27,7 +27,7 @@ body {
     color: #757575;
     background-color: #FFFFFF;
 }
-
+/* site nav */
 .logo {
     color: #000000;
 }
@@ -42,4 +42,10 @@ body {
 
 a {
     text-decoration: none;
+}
+.site-nav{
+    color: #212121; 
+}
+.site-nav .link:hover, .site-nav .linl:focus {
+    color: #2196f3;
 }
