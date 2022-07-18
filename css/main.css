@@ -1,0 +1,45 @@
+/*     font-family: 'Raleway', sans-serif;
+
+    font-family: 'Roboto', sans-serif; 
+ font colors
+    logo color 2196F3 000000
+    +accent color 2196F3
+    menu color 212121
+
+email and phone hover 2196F3
+email and phone 757575
+
++white FFFFFF
+
++featuretitle 212121
++featuretitle paragraph 757575
+ 
+   + Основной цвет текста #757575
+    вторичный цвет текста #212121
+    
+    цвет акцента #2196F3
+
+    +основной цвет фона белый #FFFFFF
+    вторичный цвет фона #F5F4FA
+*/
+
+body {
+    color: #757575;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    color: #000000;
+}
+
+.logo span {
+    color: #2196f3;
+}
+
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
