@@ -14,38 +14,151 @@ email and phone 757575
 +featuretitle 212121
 +featuretitle paragraph 757575
  
-   + Основной цвет текста #757575
-    вторичный цвет текста #212121
+   + Основной цвет текста --primary-text-color
+    вторичный цвет текста --secondary-text-color
     
-    цвет акцента #2196F3
+    цвет акцента -accent-color
 
-    +основной цвет фона белый #FFFFFF
-    вторичный цвет фона #F5F4FA
+    +основной цвет фона белый --primary-bg-color
+    вторичный цвет фона --secondary-bg-color
 */
 
 body {
-    color: #757575;
-    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    background-color:var(--primary-bg-color) ;
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
 }
 /* site nav */
 .logo {
     color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    
 }
 
 .logo span {
-    color: #2196f3;
+    color: var(--accent-color);
 }
 
 .list {
     list-style: none;
 }
 
-a {
+.link {
     text-decoration: none;
+    }
+.site-nav, .contacts{
+    letter-spacing: 0.02em;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
 }
-.site-nav{
-    color: #212121; 
+.contacts-footer{
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
-.site-nav .link:hover, .site-nav .linl:focus {
-    color: #2196f3;
+
+.adress{
+    font-style: normal;
+}
+.site-nav .link{
+    color: var(--secondary-text-color); 
+}
+.contacts .link{
+    color: var(--primary-text-color);
+}
+.contacts-footer .link,
+.contacts-footer
+{
+    color: rgba(75,75,75,0.6);
+    
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.contacts-footer .link:hover,
+.contacts-footer .link:focus
+ {
+    color: var(--accent-color);
+}
+/* hero */
+
+.hero .button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    
+}
+.hero h1{
+    color: var(--secondary-bg-color);
+    background-color: #2F303A;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+/* main */
+.alternate h2{
+    font-weight: 700;
+    font-size: 36px;
+}
+.alternate h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+.alternate p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.section-title, .section .title {
+color: var(--secondary-text-color);
+}
+.features h3{
+    font-weight: 700;
+    font-size: 14px;
+}
+.features p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.button{
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+
+}
+.button.primary{
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+.button.secondary{
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+.link p{
+    color: var(--primary-text-color);
+}
+/* galery */
+.gallery h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.gallery p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
 }
