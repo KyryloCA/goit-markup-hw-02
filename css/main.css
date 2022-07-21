@@ -27,6 +27,8 @@ body {
     color: var(--primary-text-color);
     background-color:var(--primary-bg-color) ;
     font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.2;
 }
@@ -52,20 +54,20 @@ body {
     }
 .site-nav, .contacts{
     letter-spacing: 0.02em;
-    font-family: Roboto, sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    
 
 }
 .contacts-footer{
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    
     line-height: 1.71;
 }
 
 .adress{
     font-style: normal;
+}
+.adress p{
+    color: var(--primary-bg-color);
 }
 .site-nav .link{
     color: var(--secondary-text-color); 
@@ -73,11 +75,10 @@ body {
 .contacts .link{
     color: var(--primary-text-color);
 }
-.contacts-footer .link,
-.contacts-footer
+
+.contacts-footer .link
 {
-    color: rgba(75,75,75,0.6);
-    
+    color: rgba(255,255,255,0.6);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -90,6 +91,9 @@ body {
 }
 /* hero */
 
+.hero, .adress{
+    background-color: #2F303A;
+}
 .hero .button{
     font-weight: 700;
     font-size: 16px;
@@ -98,8 +102,8 @@ body {
     
 }
 .hero h1{
+    text-transform: uppercase;
     color: var(--secondary-bg-color);
-    background-color: #2F303A;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -116,7 +120,6 @@ body {
     font-size: 16px;
 }
 .alternate p{
-    font-weight: 400;
     font-size: 16px;
 }
 
@@ -125,15 +128,13 @@ color: var(--secondary-text-color);
 }
 .features h3{
     font-weight: 700;
-    font-size: 14px;
+    
 }
-.features p{
-    font-weight: 400;
-    font-size: 14px;
-}
+
 .button{
     color: var(--secondary-text-color);
     background-color: var(--secondary-bg-color);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -158,7 +159,6 @@ color: var(--secondary-text-color);
     letter-spacing: 0.06em;
 }
 .gallery p{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
